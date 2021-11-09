@@ -1,0 +1,63 @@
+version: "2.0"
+
+stories:
+
+- story: happy python path
+  steps:
+  - intent: looking_for_a_job
+  - action: utter_looking_for_a_job
+#  - intent: python_reactjs_nodejs
+#  - action: utter_python_reactjs_nodejs
+  - intent: Are_you_a_fresher_or_experienced
+  - action: utter_Are_you_a_fresher_or_experienced
+  - intent: Fresher
+  - action: utter_Fresher
+  - intent: Experienced
+  - action: utter_Experienced
+  
+- story: happy java path
+  steps:
+  - intent: any_vacancy_in_java
+  - action: utter_any_vacancy_in_java
+  - intent: any_job_in
+  - action: utter_any_job_in
+  
+- story: happy company path
+  steps:
+  - intent: can_you_share_any_contact_number
+  - action: utter_can_you_share_any_contact_number
+  - intent: company_address
+  - action: utter_company_address
+  - intent: tell_us_more_about_your_company
+  - action: utter_tell_us_more_about_your_company
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: any_other_question
+  - action: utter_any_other_question
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: out_of_scope
+  - action: utter_out_of_scope  
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye

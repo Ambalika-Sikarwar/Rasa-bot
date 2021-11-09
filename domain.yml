@@ -1,0 +1,99 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - looking_for_a_job
+  - fresher
+  - experienced
+  - any_vacancy_in_java
+  - your_company_name
+  - can_you_share_any_contact_number
+  - company_address
+  - tell_us_more_about_your_company
+  - out_of_scope
+  - any_job_in
+  - any_other_question
+
+responses:
+  utter_looking_for_a_job:
+  - text: "Please select one of these."
+    buttons:
+     - title: "Python"
+       payload: "/Are_you_a_fresher_or_experienced"
+     - title:  "React Js"
+       payload: "/Are_you_a_fresher_or_experienced"
+     - title: "Node js"
+       payload: "/Are_you_a_fresher_or_experienced"
+     - title: "React Native"
+       payload: "/Are_you_a_fresher_or_experienced"
+     - title: "java"
+       payload: "/any_vacancy_in_java"  
+  
+  utter_Are_you_a_fresher_or_experienced:
+  - text: "Please select."
+    buttons:
+     - title: "Fresher" 
+       payload: "/Fresher"
+     - title: "Experienced"
+       payload: "/Experienced"
+  
+  utter_Fresher:
+  - text: "Yes, Currently we have openings for fresher \n you can share your resume at hr@connekt.in "
+  
+  utter_Experienced:
+  - text: "Yes, Currently we have openings for experienced \n you can share your resume at hr@connekt.in"
+  
+  utter_any_job_in:
+  - text: "Please contact with info@connekt.in or hr@connekt.in"
+  
+  utter_out_of_scope:
+  - text: "Sorry, I dont understand."
+  
+  utter_any_vacancy_in_java:
+  - text: "Sorry, Currently we don't have any openings."
+  
+  utter_ your_company_name:
+  - text: "Our company name is Connekt Technologies"
+  
+  utter_can_you_share_any_contact_number:
+  - text: "yeah sure!! Contact : +(91)-731-4230664"
+  
+  utter_company_address:
+  - text: " 103, Gravity Tower, Dr. Roshan Singh Bhandari Marg,\n Near Janjeerwala Square, Indore(M.P.) - 452001, India"
+  
+  utter_tell_us_more_about_your_company:
+  - text: "Please connect with https://www.connekt.in"
+ 
+  utter_any_other_question:
+  - text: "Any other question ? we are here to help you!" 
+  
+  utter_greet:
+  - text: "Hey! How can I help you?"
+    buttons:
+     - title: "looking For a job ?" 
+       payload: "/looking_for_a_job"
+  
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, created by Ambalika."
+
+

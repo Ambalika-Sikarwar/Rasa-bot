@@ -1,0 +1,164 @@
+version: "2.0"
+
+nlu:
+
+- intent: out_of_scope
+  examples: |
+    - who is the us president
+    - what is 2 + 2
+
+- intent: any_job_in
+  examples: |
+    - business analyst
+    - project manager
+    - hr
+    - mvc job
+    - network administrator
+    - netwrok admin
+    - hardware technician
+    
+- intent: looking_for_a_job
+  examples: |
+    - any job
+    - python
+    - react js
+    - node js
+    - react native
+
+- intent: any_other_question
+  examples: |
+    - okay
+    - ok
+    - okk
+    - thanks
+    - thks
+    - thx
+      
+- intent: Are_you_a_fresher_or_experienced
+  examples: |
+   - fresher or experienced
+
+- intent: Fresher
+  examples: |
+    - m a fresher
+    - i m a fresher
+    - fresher
+
+- intent: Experienced
+  examples: |
+    - m an experienced
+    - experienced
+
+- intent: any_vacancy_in_java
+  examples: |
+    - any job in java
+    - java
+    - looking for java profile
+
+- intent: your_company_name
+  examples: |
+    - ur company name
+    - company name
+        
+- intent: can_you_share_any_contact_number
+  examples: |
+    - plz share contact number
+    - any contact number
+    - contact number
+
+- intent: company_address
+  examples: |
+    - can you share company address
+    - company location
+    
+- intent: tell_us_more_about_your_company
+  examples: |    
+    - Is your company product based or service based
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - yes
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - no
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
